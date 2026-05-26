@@ -1,4 +1,4 @@
-# 🔬 Classificação de Tumores de Mama com KNN
+# 🔬 Breast Cancer KNN Classifier
 
 ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
@@ -7,81 +7,205 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen.svg)
 
-## 📋 Índice
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Dataset](#dataset)
-- [Resultados](#resultados)
-- [Tecnologias](#tecnologias)
-- [Pré-requisitos](#pré-requisitos)
-- [Como Executar](#como-executar)
-  - [Opção 1: VS Code](#opção-1-vs-code-recomendado)
-  - [Opção 2: Google Colab](#opção-2-google-colab)
-  - [Opção 3: Jupyter Notebook Local](#opção-3-jupyter-notebook-local)
-  - [Opção 4: Terminal/Script Python](#opção-4-terminalscript-python)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Exemplo de Saída](#exemplo-de-saída)
-- [Interpretação dos Resultados](#interpretação-dos-resultados)
-- [Solução de Problemas](#solução-de-problemas)
-- [Autor](#autor)
-- [Licença](#licença)
+---
+
+# 📋 Sobre o Projeto
+
+Este projeto implementa um modelo de Machine Learning utilizando o algoritmo **K-Nearest Neighbors (KNN)** para classificação de tumores de mama em:
+
+- ✅ Benignos
+- ⚠️ Malignos
+
+O projeto utiliza o dataset Breast Cancer Wisconsin disponível na biblioteca `scikit-learn`.
 
 ---
 
-## 📋 Sobre o Projeto
+# 🎯 Objetivos
 
-Este projeto implementa um classificador **K-Nearest Neighbors (KNN)** para diagnosticar tumores de mama como **benignos** (não cancerígenos) ou **malignos** (cancerígenos) utilizando o dataset Breast Cancer Wisconsin do scikit-learn.
-
-### 🎯 Objetivos
-- Demonstrar aplicação prática de Machine Learning em diagnóstico médico
-- Encontrar o melhor valor de K para maximizar a acurácia
-- Avaliar performance do modelo com métricas de classificação
-- Visualizar padrões nos dados que diferenciam tumores benignos de malignos
-
-### 🤔 Como funciona o KNN?
-O algoritmo KNN classifica um novo tumor baseado nos K tumores mais similares (vizinhos mais próximos):
-1. Calcula a distância entre o novo tumor e todos os tumores do dataset
-2. Seleciona os K mais próximos
-3. Faz uma "votação" - a classe majoritária entre os vizinhos é a predição
+- Aplicar Machine Learning em diagnóstico médico
+- Encontrar o melhor valor de K
+- Avaliar acurácia do modelo
+- Gerar gráficos e métricas de desempenho
+- Demonstrar uso de Python para classificação supervisionada
 
 ---
 
-## 📊 Dataset
+# 📊 Dataset
 
-**Breast Cancer Wisconsin Dataset** (do scikit-learn)
+O dataset contém:
 
-| Propriedade | Valor |
-|-------------|-------|
-| Total de amostras | 569 |
-| Características | 30 |
-| Tumores Malignos | 212 (37.3%) |
-| Tumores Benignos | 357 (62.7%) |
-
-### Características incluídas:
-| Categoria | Features |
-|-----------|----------|
-| **Morfologia** | radius (raio), perimeter (perímetro), area (área) |
-| **Textura** | texture, smoothness (suavidade) |
-| **Geometria** | compactness (compacidade), concavity (concavidade) |
-| **Outras** | symmetry (simetria), fractal_dimension |
-
-*Total: 30 features (média, erro padrão e "pior" para cada característica)*
+| Informação | Valor |
+|------------|-------|
+| Amostras | 569 |
+| Features | 30 |
+| Classes | Benigno / Maligno |
 
 ---
 
-## 📈 Resultados
+# 🚀 Tecnologias Utilizadas
 
-### Melhor Modelo
-| Parâmetro | Valor |
-|-----------|-------|
-| **Melhor K** | 12 |
-| **Acurácia** | 97.66% |
-| **Dataset** | 70% treino / 30% teste |
+- Python
+- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- Jupyter Notebook
 
-### Classification Report (Conjunto de Teste)
-| Classe | Precisão | Recall | F1-Score | Suporte |
-|--------|----------|--------|----------|---------|
-| Maligno | 1.00 | 0.94 | 0.97 | 54 |
-| Benigno | 0.96 | 1.00 | 0.98 | 117 |
-| **Média** | **0.98** | **0.97** | **0.97** | **171** |
+---
 
-### Matriz de Confusão
+# 📦 Instalação
+
+## 1️⃣ Clonar o repositório
+
+```bash
+git clone https://github.com/babi-s4ntos/breast-cancer-knn-classifier.git
+```
+
+---
+
+## 2️⃣ Entrar na pasta
+
+```bash
+cd breast-cancer-knn-classifier
+```
+
+---
+
+## 3️⃣ Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Como Executar
+
+## VS Code
+
+1. Abra o VS Code
+2. Clique em:
+
+```text
+File → Open Folder
+```
+
+3. Selecione a pasta do projeto
+4. Abra o arquivo:
+
+```text
+atvdd.ipynb
+```
+
+5. Clique em:
+
+```text
+Run All
+```
+
+---
+
+## Google Colab
+
+1. Acesse:
+
+https://colab.research.google.com
+
+2. Faça upload do arquivo:
+
+```text
+atvdd.ipynb
+```
+
+3. Clique em:
+
+```text
+Runtime → Run All
+```
+
+---
+
+# 📈 Resultados
+
+## Melhor modelo encontrado
+
+| Métrica | Resultado |
+|----------|------------|
+| Melhor K | 12 |
+| Acurácia | 97.66% |
+
+---
+
+# 📊 Exemplo de Saída
+
+```text
+MELHOR K ESCOLHIDO: K = 12
+Acurácia no teste: 0.9766
+```
+
+---
+
+# 📁 Estrutura do Projeto
+
+```text
+breast-cancer-knn-classifier/
+│
+├── atvdd.ipynb
+├── atvdKnn.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# ⚠️ Possíveis Erros
+
+## Erro sklearn
+
+```bash
+pip install scikit-learn
+```
+
+## Erro seaborn
+
+```bash
+pip install seaborn
+```
+
+## Erro numpy
+
+```bash
+pip install numpy pandas
+```
+
+---
+
+# 📦 requirements.txt
+
+```txt
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scikit-learn>=1.0.0
+jupyter>=1.0.0
+```
+
+---
+
+# 👤 Autor
+
+## Babi Santos
+
+- GitHub: https://github.com/babi-s4ntos
+
+---
+
+# 📄 Licença
+
+Projeto acadêmico para estudos de Machine Learning com Python.
+
+---
+
+⭐ Se gostou do projeto, deixe uma estrela no repositório!
