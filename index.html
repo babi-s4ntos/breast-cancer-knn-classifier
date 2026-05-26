@@ -1,14 +1,315 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Breast Cancer KNN</title>
-</head>
-<body>
-    <h1>🔬 Breast Cancer KNN Classifier</h1>
-    <p>Projeto de Machine Learning utilizando KNN.</p>
+<html lang="pt-BR">
 
-    <a href="https://github.com/babi-s4ntos/breast-cancer-knn-classifier">
-        Ver Projeto no GitHub
-    </a>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Breast Cancer KNN Classifier</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-container">
+
+      <!-- TEXTO -->
+      <div class="hero-text">
+
+        <div class="badge">
+          🎗️ Inteligência Artificial • Saúde • Prevenção
+        </div>
+
+        <h1>
+          O diagnóstico precoce do
+          <span class="highlight">câncer de mama</span>
+          pode salvar vidas.
+        </h1>
+
+        <p class="subtitle">
+          A Inteligência Artificial pode auxiliar profissionais da saúde
+          na identificação precoce de tumores, contribuindo para diagnósticos
+          mais rápidos, modernos e precisos.
+        </p>
+
+        <div class="buttons">
+
+          <a
+            class="btn btn-primary"
+            href="https://github.com/babi-s4ntos/breast-cancer-knn-classifier"
+            target="_blank"
+          >
+            🔬 Ver Projeto KNN
+          </a>
+
+          <a class="btn btn-secondary" href="#sobre">
+            Saiba Mais
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEM -->
+      <div class="hero-image">
+
+        <img
+          src="img/img.png"
+          alt="Ilustração câncer de mama"
+        >
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE O CÂNCER -->
+  <section class="about-cancer">
+
+    <h2 class="section-title">
+      🎗️ Sobre o Câncer de Mama
+    </h2>
+
+    <p class="section-description">
+      O câncer de mama ocorre quando células da mama passam a crescer
+      de forma descontrolada. O diagnóstico precoce aumenta as chances
+      de tratamento eficaz e recuperação.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>📌 Importância da Prevenção</h3>
+
+        <p>
+          Exames periódicos e acompanhamento médico ajudam na identificação
+          precoce da doença.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🩺 Diagnóstico Inteligente</h3>
+
+        <p>
+          Técnicas de Machine Learning auxiliam profissionais da saúde
+          na classificação de tumores.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>💖 Tecnologia Salvando Vidas</h3>
+
+        <p>
+          A Inteligência Artificial acelera diagnósticos e melhora análises clínicas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE O PROJETO -->
+  <section id="sobre" class="project">
+
+    <h2 class="section-title">
+      📋 Sobre o Projeto
+    </h2>
+
+    <p class="section-description">
+      Este projeto utiliza Machine Learning para classificar tumores
+      como benignos ou malignos através do algoritmo KNN.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>🎯 Objetivo</h3>
+
+        <p>
+          Demonstrar a aplicação prática de Inteligência Artificial
+          na área médica.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🧠 Algoritmo KNN</h3>
+
+        <p>
+          O algoritmo KNN classifica novos dados baseado
+          nos vizinhos mais próximos.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>📊 Dataset</h3>
+
+        <p>
+          Dataset Breast Cancer Wisconsin contendo
+          569 amostras clínicas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="results">
+
+    <h2 class="section-title">
+      📈 Resultados
+    </h2>
+
+    <div class="stats">
+
+      <div class="stat">
+
+        <h2>97.66%</h2>
+
+        <p>Acurácia do Modelo</p>
+
+      </div>
+
+      <div class="stat">
+
+        <h2>K = 12</h2>
+
+        <p>Melhor Valor Encontrado</p>
+
+      </div>
+
+      <div class="stat">
+
+        <h2>569</h2>
+
+        <p>Amostras Analisadas</p>
+
+      </div>
+
+      <div class="stat">
+
+        <h2>30</h2>
+
+        <p>Features Utilizadas</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="technologies">
+
+    <h2 class="section-title">
+      ⚙️ Tecnologias
+    </h2>
+
+    <p class="section-description">
+      Ferramentas e bibliotecas utilizadas durante
+      o desenvolvimento do projeto.
+    </p>
+
+    <div class="tech-list">
+
+      <div class="tech">Python</div>
+      <div class="tech">Scikit-Learn</div>
+      <div class="tech">Pandas</div>
+      <div class="tech">NumPy</div>
+      <div class="tech">Matplotlib</div>
+      <div class="tech">Seaborn</div>
+      <div class="tech">Jupyter Notebook</div>
+      <div class="tech">VS Code</div>
+
+    </div>
+
+  </section>
+
+  <!-- COMO EXECUTAR -->
+  <section class="execution">
+
+    <h2 class="section-title">
+      🚀 Como Executar
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>1️⃣ Clonar Repositório</h3>
+
+        <p>
+          Faça o clone do projeto diretamente do GitHub utilizando Git.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>2️⃣ Instalar Dependências</h3>
+
+        <p>
+          Execute o comando:
+          <strong>pip install -r requirements.txt</strong>
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>3️⃣ Executar Notebook</h3>
+
+        <p>
+          Abra o arquivo <strong>atvdd.ipynb</strong>
+          no VS Code ou Jupyter Notebook.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      Desenvolvido por
+      <strong>Babi Santos</strong>
+      • Projeto Acadêmico de Machine Learning • 2026
+    </p>
+
+  </footer>
+
 </body>
+
 </html>
