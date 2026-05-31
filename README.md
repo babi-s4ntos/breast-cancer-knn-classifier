@@ -23,13 +23,13 @@ O projeto utiliza o dataset Breast Cancer Wisconsin disponível na biblioteca `s
 ## Visualização do Sistema
 
 <p align="center">
-  <img src="./images/tela principal.png" alt="Tela Principal" width="45%">
-  <img src="./images/19.png" alt="Resultado da Classificação" width="45%">
+  <img src="tela principal.png" alt="Tela Principal" width="45%">
+  <img src="19.png" alt="Resultado da Classificação" width="45%">
 </p>
 
 <p align="center">
-  <img src="./images/20.png" alt="Gráfico de Acurácia" width="45%">
-  <img src="./images/21.png" alt="Matriz de Confusão" width="45%">
+  <img src="20.png" alt="Gráfico de Acurácia" width="45%">
+  <img src="21.png" alt="Matriz de Confusão" width="45%">
 </p>
 
 ---
