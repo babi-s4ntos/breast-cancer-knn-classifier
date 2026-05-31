@@ -18,6 +18,34 @@ Este projeto implementa um modelo de Machine Learning utilizando o algoritmo **K
 
 O projeto utiliza o dataset Breast Cancer Wisconsin disponível na biblioteca `scikit-learn`.
 
+# 📸 Screenshots do Projeto
+
+## Visualização do Sistema
+
+<p align="center">
+  <img src="./images/tela principal.png" alt="Tela Principal" width="45%">
+  <img src="./images/19.png" alt="Resultado da Classificação" width="45%">
+</p>
+
+<p align="center">
+  <img src="./images/20.png" alt="Gráfico de Acurácia" width="45%">
+  <img src="./images/21.png" alt="Matriz de Confusão" width="45%">
+</p>
+
+---
+
+### 📋 Tela Principal
+Interface inicial do projeto para execução e análise do classificador KNN.
+
+### 📊 Resultado da Classificação
+Exibição da predição realizada pelo modelo de Machine Learning.
+
+### 📈 Gráfico de Desempenho
+Visualização da acurácia obtida para diferentes valores de K.
+
+### 🎯 Matriz de Confusão
+Representação gráfica dos acertos e erros do modelo na classificação dos tumores.
+
 ---
 
 # 🎯 Objetivos
